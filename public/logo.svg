@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <defs>
+    <!-- Outer Cyan/Sky Glow Filter -->
+    <filter id="logoGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Intense Rim Light Filter -->
+    <filter id="rimGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Metallic Blue Gradient for Body & Pedestal -->
+    <linearGradient id="blueBodyGrad" x1="0%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stopColor="#1E466B" />
+      <stop offset="40%" stopColor="#2563EB" />
+      <stop offset="75%" stopColor="#67BAF4" />
+      <stop offset="100%" stopColor="#E0F2FE" />
+    </linearGradient>
+
+    <!-- Shield/Wing Volume Gradient -->
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#93C5FD" />
+      <stop offset="25%" stopColor="#3B82F6" />
+      <stop offset="65%" stopColor="#1D4ED8" />
+      <stop offset="100%" stopColor="#172554" />
+    </linearGradient>
+
+    <!-- Shield Outer Dome Gradient -->
+    <linearGradient id="shieldDomeGrad" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stopColor="#BAE6FD" />
+      <stop offset="45%" stopColor="#38BDF8" />
+      <stop offset="80%" stopColor="#1E40AF" />
+      <stop offset="100%" stopColor="#0F172A" />
+    </linearGradient>
+
+    <!-- Heart Head Gradient -->
+    <linearGradient id="heartHeadGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stopColor="#1E3A8A" />
+      <stop offset="50%" stopColor="#3B82F6" />
+      <stop offset="85%" stopColor="#67BAF4" />
+      <stop offset="100%" stopColor="#FFFFFF" />
+    </linearGradient>
+
+    <!-- Pedestal Rim Light Gradient -->
+    <linearGradient id="pedestalGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stopColor="#1E466B" stopOpacity="0.4" />
+      <stop offset="30%" stopColor="#67BAF4" />
+      <stop offset="60%" stopColor="#FFFFFF" />
+      <stop offset="90%" stopColor="#67BAF4" />
+      <stop offset="100%" stopColor="#1E466B" stopOpacity="0.3" />
+    </linearGradient>
+
+    <!-- Rim Stroke Gradient -->
+    <linearGradient id="whiteRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.95" />
+      <stop offset="50%" stopColor="#BAE6FD" stopOpacity="0.8" />
+      <stop offset="100%" stopColor="#38BDF8" stopOpacity="0.5" />
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Blue Halo Backing -->
+  <circle cx="210" cy="190" r="130" fill="#67BAF4" opacity="0.12" filter="blur(40px)" />
+
+  <g filter="url(#logoGlow)">
+    <!-- 1. Horizontal Curved Pedestal -->
+    <path
+      d="M135 342 C165 340, 245 338, 305 344 C312 345, 316 348, 308 350 C250 354, 175 354, 130 350 C125 349, 126 343, 135 342 Z"
+      fill="url(#pedestalGrad)"
+      stroke="url(#whiteRim)"
+      strokeWidth="1.2"
+    />
+
+    <!-- 2. Shield / Wing Curved Dimensional Element (Right) -->
+    <!-- Base Layer of Wing -->
+    <path
+      d="M236 158 C265 110, 345 105, 375 145 C400 178, 395 230, 348 265 C308 294, 256 260, 252 245 L236 158 Z"
+      fill="url(#shieldGrad)"
+      stroke="url(#whiteRim)"
+      strokeWidth="2"
+      filter="url(#rimGlow)"
+    />
+
+    <!-- Dimensional Inner Dome Overlay of Wing -->
+    <path
+      d="M260 135 C310 120, 368 140, 362 185 C355 228, 310 252, 275 240 C258 200, 255 160, 260 135 Z"
+      fill="url(#shieldDomeGrad)"
+      opacity="0.85"
+    />
+
+    <!-- Inner Crescent Facet Highlight -->
+    <path
+      d="M268 142 C300 132, 348 148, 350 182 C342 215, 310 234, 282 225 C270 195, 268 165, 268 142 Z"
+      fill="none"
+      stroke="#BAE6FD"
+      strokeWidth="1.5"
+      opacity="0.6"
+    />
+
+    <!-- 3. Slender Stylized Humanoid Figure -->
+    <!-- Left Leg (Front) & Right Leg (Back) -->
+    <path
+      d="M192 120 C198 135, 192 165, 186 210 L168 340 L188 340 L204 285 L224 340 L244 340 L212 215 C210 185, 218 150, 214 125 C210 115, 205 112, 192 120 Z"
+      fill="url(#blueBodyGrad)"
+      stroke="url(#whiteRim)"
+      strokeWidth="2"
+      filter="url(#rimGlow)"
+    />
+
+    <!-- Luminescent Leg Highlight Spline -->
+    <path
+      d="M204 220 L222 336"
+      stroke="#FFFFFF"
+      strokeWidth="2"
+      strokeLinecap="round"
+      opacity="0.75"
+    />
+
+    <!-- 4. Heart / Petal Styled Head -->
+    <path
+      d="M208 108 C202 85, 195 62, 210 48 C222 36, 238 42, 245 56 C255 42, 270 38, 278 52 C286 68, 265 96, 230 114 C218 120, 212 116, 208 108 Z"
+      fill="url(#heartHeadGrad)"
+      stroke="url(#whiteRim)"
+      strokeWidth="2"
+      filter="url(#rimGlow)"
+    />
+
+    <!-- Heart Top Rim Glint -->
+    <path
+      d="M212 50 C220 40, 234 44, 242 55"
+      stroke="#FFFFFF"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+    />
+    <path
+      d="M255 48 C265 42, 274 46, 276 56"
+      stroke="#FFFFFF"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+    />
+  </g>
+</svg>

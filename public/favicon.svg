@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <rect width="100" height="100" rx="22" fill="#080D14" />
+  
+  <defs>
+    <linearGradient id="favBlue" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stopColor="#1E466B" />
+      <stop offset="60%" stopColor="#67BAF4" />
+      <stop offset="100%" stopColor="#FFFFFF" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(4, -8) scale(0.24)">
+    <!-- Pedestal -->
+    <path d="M135 342 C165 340, 245 338, 305 344 C312 345, 316 348, 308 350 C250 354, 175 354, 130 350 Z" fill="url(#favBlue)" />
+    <!-- Wing -->
+    <path d="M236 158 C265 110, 345 105, 375 145 C400 178, 395 230, 348 265 C308 294, 256 260, 252 245 L236 158 Z" fill="url(#favBlue)" stroke="#BAE6FD" stroke-width="3" />
+    <!-- Body -->
+    <path d="M192 120 C198 135, 192 165, 186 210 L168 340 L188 340 L204 285 L224 340 L244 340 L212 215 C210 185, 218 150, 214 125 Z" fill="url(#favBlue)" stroke="#BAE6FD" stroke-width="3" />
+    <!-- Heart Head -->
+    <path d="M208 108 C202 85, 195 62, 210 48 C222 36, 238 42, 245 56 C255 42, 270 38, 278 52 C286 68, 265 96, 230 114 Z" fill="url(#favBlue)" stroke="#FFFFFF" stroke-width="4" />
+  </g>
+</svg>

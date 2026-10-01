@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-mono: 'Space Mono', monospace;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  
+  --color-pitch: #080808;
+  --color-surface: #0e0e0e;
+  --color-card: #121212;
+  --color-subtle: #222222;
+  --color-accent: #e2e2e2;
+  --color-silver: #8e8e93;
+
+  --color-brand-bold: #1E466B;
+  --color-brand-light: #67BAF4;
+  --color-brand-white: #FAFAFA;
+  --color-brand-black: #0D0D0D;
+}
+
+@layer base {
+  body {
+    @apply bg-pitch text-neutral-300 antialiased selection:bg-neutral-800 selection:text-white;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+}
+
+.font-serif-italic {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.letter-spacing-wide {
+  letter-spacing: 0.22em;
+}
+
+.letter-spacing-widest {
+  letter-spacing: 0.35em;
+}
+
+.noise-bg {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.editorial-border {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-border:hover {
+  border-color: rgba(255, 255, 255, 0.28);
+  transform: translateY(-2px);
+}
+
+.vertical-badge {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: 200%;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.animate-marquee-reverse {
+  display: flex;
+  width: 200%;
+  animation: marquee-reverse 35s linear infinite;
+}
+
+.animate-marquee-reverse:hover {
+  animation-play-state: paused;
+}
