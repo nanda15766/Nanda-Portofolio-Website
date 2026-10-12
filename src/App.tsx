@@ -1,4 +1,5 @@
-import { useEffect } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
+import { MotionConfig } from 'motion/react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import Navbar from './components/Navbar';
@@ -13,9 +14,9 @@ import ScrollProgress from './components/ScrollProgress';
 import SideBadge from './components/SideBadge';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 import Home from './pages/Home';
-import Work from './pages/Work';
-import About from './pages/About';
-import Partnerships from './pages/Partnerships';
+const Work = lazy(() => import('./pages/Work'));
+const About = lazy(() => import('./pages/About'));
+const Partnerships = lazy(() => import('./pages/Partnerships'));
 
 export default function App() {
   const location = useLocation();
@@ -37,6 +38,7 @@ export default function App() {
 
   return (
     <HelmetProvider>
+      <MotionConfig reducedMotion="user">
       <ThemeProvider>
         <LanguageProvider>
           <ContactProvider>
@@ -45,12 +47,14 @@ export default function App() {
             <div className="bg-pitch min-h-screen text-neutral-300 font-sans selection:bg-neutral-800 selection:text-white relative">
               <SideBadge />
               <Navbar />
+              <Suspense fallback={null}>
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/work" element={<Work />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/partnerships" element={<Partnerships />} />
               </Routes>
+              </Suspense>
               <Footer />
               <BackToTop />
               <FloatingWhatsApp />
@@ -59,6 +63,7 @@ export default function App() {
           </ContactProvider>
         </LanguageProvider>
       </ThemeProvider>
+    </MotionConfig>
     </HelmetProvider>
   );
 }

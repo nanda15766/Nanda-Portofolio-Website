@@ -105,7 +105,7 @@ export default function Hero() {
               {language === 'en' ? 'Explore Work ↓' : 'Lihat Portofolio ↓'}
             </button>
             <a
-              href="/Resume & Portofolio - Nanda Dwi Wahyu Prrasetyo 2026.pdf"
+              href="/Resume & Portofolio - Nanda Dwi Wahyu Prasetyo 2026.pdf"
               download="Resume & Portofolio - Nanda Dwi Wahyu Prasetyo 2026.pdf"
               target="_blank"
               rel="noopener noreferrer"

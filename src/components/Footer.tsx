@@ -139,7 +139,7 @@ export default function Footer() {
             </button>
             <a
               className="hover:text-white transition-colors"
-              href="/Resume & Portofolio - Nanda Dwi Wahyu Prrasetyo 2026.pdf"
+              href="/Resume & Portofolio - Nanda Dwi Wahyu Prasetyo 2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >

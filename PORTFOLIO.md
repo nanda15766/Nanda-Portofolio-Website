@@ -16,7 +16,7 @@
 | **Email** | [nanda15766@gmail.com](mailto:nanda15766@gmail.com) |
 | **Phone / WhatsApp** | [+62 815-5672-5874](tel:+6281556725874) |
 | **LinkedIn** | [linkedin.com/in/nandadwiwahyuprasetyo](https://www.linkedin.com/in/nandadwiwahyuprasetyo/) |
-| **Resume & Portfolio PDF** | `Resume & Portofolio - Nanda Dwi Wahyu Prrasetyo 2026.pdf` |
+| **Resume & Portfolio PDF** | `Resume & Portofolio - Nanda Dwi Wahyu Prasetyo 2026.pdf` |
 
 ### Narrative Profile
 Building authentic, autonomous communities through social media. Delivered over **4,000+ content pieces**, sustained **3,000,000+ average monthly organic views**, and cultivated **182,000+ cross-platform followers** spanning luxury travel, fitness supplements, professional esports, and technology hardware. Rooted in quantitative rigor, high-retention storytelling, and community-first brand advocacy.

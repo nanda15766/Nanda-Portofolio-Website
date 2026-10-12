@@ -117,7 +117,7 @@ export default function Navbar() {
         <div className="flex items-center gap-2.5 sm:gap-3" data-purpose="action-links">
           {/* Prominent Download Portfolio Button */}
           <a
-            href="/Resume & Portofolio - Nanda Dwi Wahyu Prrasetyo 2026.pdf"
+            href="/Resume & Portofolio - Nanda Dwi Wahyu Prasetyo 2026.pdf"
             download="Resume & Portofolio - Nanda Dwi Wahyu Prasetyo 2026.pdf"
             target="_blank"
             rel="noopener noreferrer"
@@ -212,7 +212,7 @@ export default function Navbar() {
             <div className="pt-3 border-t border-neutral-800 flex items-center justify-between">
               {/* Mobile Download Portfolio Button */}
               <a
-                href="/Resume & Portofolio - Nanda Dwi Wahyu Prrasetyo 2026.pdf"
+                href="/Resume & Portofolio - Nanda Dwi Wahyu Prasetyo 2026.pdf"
                 download="Resume & Portofolio - Nanda Dwi Wahyu Prasetyo 2026.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
