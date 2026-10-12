@@ -75,14 +75,14 @@ export default function Manifesto() {
     >
       <div className="flex flex-col md:flex-row md:items-baseline justify-between mb-16 pb-6 border-b border-neutral-800">
         <div>
-          <span className="font-mono text-xs uppercase tracking-widest text-neutral-500">
+          <span className="font-mono text-xs uppercase tracking-widest text-neutral-400">
             {language === 'en' ? '01 / ARCHITECTURAL PHILOSOPHY' : '01 / FILOSOFI ARSITEKTUR'}
           </span>
           <h2 className="font-serif-italic text-4xl md:text-5xl text-white mt-2">
             {language === 'en' ? 'The Digital Manifesto' : 'Manifesto Digital'}
           </h2>
         </div>
-        <p className="font-mono text-xs text-neutral-500 mt-4 md:mt-0 tracking-wider max-w-xs">
+        <p className="font-mono text-xs text-neutral-400 mt-4 md:mt-0 tracking-wider max-w-xs">
           {language === 'en'
             ? 'ENGINEERING VALUE IN AN ERA OF SHORT-ATTENTION TURBULENCE.'
             : 'MERANCANG NILAI DI ERA TURBULENSI ATENSI PENDEK.'}
@@ -99,7 +99,7 @@ export default function Manifesto() {
             transition={{ duration: 0.5, delay: idx * 0.12 }}
             className="editorial-border bg-card/60 p-8 rounded-sm space-y-4"
           >
-            <div className="flex justify-between items-center text-neutral-500 font-mono text-xs border-b border-neutral-800/70 pb-3">
+            <div className="flex justify-between items-center text-neutral-400 font-mono text-xs border-b border-neutral-800/70 pb-3">
               <span>{pillar.number}</span>
               <span>{pillar.badge}</span>
             </div>
@@ -109,7 +109,7 @@ export default function Manifesto() {
             <p className="text-neutral-400 text-sm leading-relaxed">
               {language === 'en' ? pillar.descEn : pillar.descId}
             </p>
-            <ul className="font-mono text-[11px] text-neutral-500 space-y-1.5 pt-2">
+            <ul className="font-mono text-[11px] text-neutral-400 space-y-1.5 pt-2">
               {(language === 'en' ? pillar.pointsEn : pillar.pointsId).map((pt, pIdx) => (
                 <li key={pIdx}>{pt}</li>
               ))}

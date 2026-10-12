@@ -103,8 +103,20 @@ export default function LiquidBackdrop() {
         ctx.restore();
       }
 
-      animationFrameId = requestAnimationFrame(render);
+      if (!paused && !reducedMotion) animationFrameId = requestAnimationFrame(render);
     };
+
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let paused = document.hidden;
+    const handleVisibility = () => {
+      paused = document.hidden;
+      if (!paused && !reducedMotion) {
+        cancelAnimationFrame(animationFrameId);
+      document.removeEventListener('visibilitychange', handleVisibility);
+        animationFrameId = requestAnimationFrame(render);
+      }
+    };
+    document.addEventListener('visibilitychange', handleVisibility);
 
     render();
 

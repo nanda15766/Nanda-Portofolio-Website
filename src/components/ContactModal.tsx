@@ -199,7 +199,7 @@ export default function ContactModal() {
                         <Mail className="w-4 h-4 text-black" />
                         <span>{language === 'en' ? 'Open in Gmail (Web)' : 'Buka di Gmail (Web)'}</span>
                       </span>
-                      <ExternalLink className="w-3.5 h-3.5 text-neutral-600 group-hover:translate-x-0.5 transition-transform" />
+                      <ExternalLink className="w-3.5 h-3.5 text-neutral-400 group-hover:translate-x-0.5 transition-transform" />
                     </a>
 
                     {/* Option 2: Default Mail Client (mailto) */}

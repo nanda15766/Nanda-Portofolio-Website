@@ -82,7 +82,7 @@ export default function Navbar() {
             <span className="font-serif-italic text-lg tracking-wide text-neutral-200 group-hover:text-white transition-colors">
               Nanda D. W. Prasetyo
             </span>
-            <span className="font-mono text-[9px] uppercase tracking-widest text-neutral-500">
+            <span className="font-mono text-[10px] uppercase tracking-widest text-neutral-400">
               Community Architect
             </span>
           </div>
@@ -104,7 +104,7 @@ export default function Navbar() {
                   isActive ? 'text-white font-medium' : 'text-neutral-400 hover:text-white'
                 }`}
               >
-                <span className={`text-[7px] ${isActive ? 'text-white' : 'text-neutral-600'}`}>
+                <span className={`text-[7px] ${isActive ? 'text-white' : 'text-neutral-400'}`}>
                   {isActive ? '●' : '○'}
                 </span>
                 <span>{language === 'en' ? item.labelEn : item.labelId}</span>

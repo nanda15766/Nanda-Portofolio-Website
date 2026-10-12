@@ -125,7 +125,7 @@ export default function SystemCapabilities() {
                     {item.number}
                   </span>
 
-                  <div className="flex flex-wrap items-center justify-end gap-x-2.5 gap-y-1 text-[9px] font-mono tracking-widest text-white/40 uppercase max-w-[70%] text-right">
+                  <div className="flex flex-wrap items-center justify-end gap-x-2.5 gap-y-1 text-[10px] font-mono tracking-widest text-white/40 uppercase max-w-[70%] text-right">
                     {item.tags.map((tag, tIdx) => (
                       <span key={tIdx}>
                         {tag}{tIdx < item.tags.length - 1 ? ' •' : ''}

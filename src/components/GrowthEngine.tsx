@@ -80,7 +80,7 @@ export default function GrowthEngine() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-neutral-800">
           <div>
-            <span className="font-mono text-xs uppercase tracking-widest text-neutral-500">
+            <span className="font-mono text-xs uppercase tracking-widest text-neutral-400">
               {language === 'en' ? '02 / SYSTEM ARCHITECTURE' : '02 / ARSITEKTUR SISTEM'}
             </span>
             <h2 className="font-serif-italic text-4xl md:text-5xl text-white mt-2">
@@ -105,13 +105,13 @@ export default function GrowthEngine() {
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               className="bg-card p-6 border border-neutral-800/80 rounded-sm relative group hover:border-neutral-600 transition-all"
             >
-              <div className="font-mono text-2xl text-neutral-600 group-hover:text-white transition-colors mb-4">
+              <div className="font-mono text-2xl text-neutral-400 group-hover:text-white transition-colors mb-4">
                 {step.number}
               </div>
               <h4 className="font-serif text-xl text-white mb-2">
                 {language === 'en' ? step.titleEn : step.titleId}
               </h4>
-              <span className="font-mono text-[10px] text-neutral-500 uppercase tracking-widest block mb-3">
+              <span className="font-mono text-[10px] text-neutral-400 uppercase tracking-widest block mb-3">
                 {language === 'en' ? step.tagEn : step.tagId}
               </span>
               <p className="text-neutral-400 text-xs leading-relaxed">

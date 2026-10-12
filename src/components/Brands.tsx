@@ -501,7 +501,7 @@ export default function Brands() {
                     #{brand.num.toString().padStart(2, '0')}
                   </span>
                   {brand.highlight && (
-                    <span className="text-[9px] uppercase px-1.5 py-0.5 bg-white/[0.06] text-white/70 border border-white/10 rounded-xs tracking-wider">
+                    <span className="text-[10px] uppercase px-1.5 py-0.5 bg-white/[0.06] text-white/70 border border-white/10 rounded-xs tracking-wider">
                       {brand.highlight}
                     </span>
                   )}
@@ -538,7 +538,7 @@ export default function Brands() {
                     <span className="truncate">
                       {language === 'en' ? brand.categoryLabelEn : brand.categoryLabelId}
                     </span>
-                    <span className="text-white/30 text-[9px] shrink-0 ml-1">
+                    <span className="text-white/30 text-[10px] shrink-0 ml-1">
                       #{brand.num.toString().padStart(2, '0')}
                     </span>
                   </div>
@@ -614,7 +614,7 @@ export default function Brands() {
                   <span className="block font-sans text-xs font-semibold text-white/85 group-hover/pill:text-white">
                     {item.name}
                   </span>
-                  <span className="block font-mono text-[9px] text-white/40 uppercase tracking-wider">
+                  <span className="block font-mono text-[10px] text-white/40 uppercase tracking-wider">
                     {language === 'en' ? item.categoryLabelEn : item.categoryLabelId}
                   </span>
                 </div>
@@ -644,7 +644,7 @@ export default function Brands() {
                   <span className="block font-sans text-xs font-semibold text-white/85 group-hover/pill:text-white">
                     {item.name}
                   </span>
-                  <span className="block font-mono text-[9px] text-white/40 uppercase tracking-wider">
+                  <span className="block font-mono text-[10px] text-white/40 uppercase tracking-wider">
                     {language === 'en' ? item.categoryLabelEn : item.categoryLabelId}
                   </span>
                 </div>

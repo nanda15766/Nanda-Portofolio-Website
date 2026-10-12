@@ -7,10 +7,10 @@ export default function SideBadge() {
       <span className="font-mono text-[10px] uppercase tracking-widest text-neutral-400 font-bold mb-3">
         IDN
       </span>
-      <span className="vertical-badge font-mono text-[10px] uppercase tracking-widest text-neutral-500 py-3 border-y border-neutral-800">
+      <span className="vertical-badge font-mono text-[10px] uppercase tracking-widest text-neutral-400 py-3 border-y border-neutral-800">
         ARCHITECT 2025
       </span>
-      <span className="font-mono text-[9px] text-emerald-400 mt-3 animate-pulse">
+      <span className="font-mono text-[10px] text-emerald-400 mt-3 animate-pulse">
         ● UTC+7
       </span>
     </aside>
