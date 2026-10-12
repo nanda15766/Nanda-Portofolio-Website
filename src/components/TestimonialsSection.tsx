@@ -16,7 +16,7 @@ export default function TestimonialsSection() {
       {/* Section Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-neutral-800 gap-6">
         <div>
-          <span className="font-mono text-xs uppercase tracking-widest text-neutral-500">
+          <span className="font-mono text-xs uppercase tracking-widest text-neutral-400">
             {language === 'en' ? '05 / SOCIAL PROOF & ENDORSEMENTS' : '05 / BUKTI SOSIAL & TESTIMONI'}
           </span>
           <h2 className="font-serif-italic text-4xl md:text-5xl text-white mt-2">
@@ -44,7 +44,7 @@ export default function TestimonialsSection() {
             <div className="space-y-6">
               {/* Top Quote Icon & Result Badge */}
               <div className="flex items-center justify-between gap-4">
-                <Quote className="w-8 h-8 text-neutral-600 group-hover:text-brand-light transition-colors" />
+                <Quote className="w-8 h-8 text-neutral-400 group-hover:text-brand-light transition-colors" />
                 <span className="px-3 py-1 rounded-xs bg-neutral-900 border border-neutral-800 text-[11px] font-mono text-[#25D366] font-medium tracking-wide">
                   {item.resultBadge}
                 </span>

@@ -22,7 +22,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Grand Closing Statement */}
         <div className="max-w-3xl space-y-6 mb-12">
-          <span className="font-mono text-xs uppercase tracking-widest text-neutral-500">
+          <span className="font-mono text-xs uppercase tracking-widest text-neutral-400">
             {language === 'en' ? '05 / DIRECT COLLABORATION' : '05 / KOLABORASI LANGSUNG'}
           </span>
           <h2 className="font-serif-italic text-5xl sm:text-6xl md:text-7xl text-white leading-[1.05]">
@@ -124,7 +124,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Minimal Bar */}
-        <div className="pt-10 border-t border-neutral-900 flex flex-col md:flex-row items-center justify-between text-neutral-500 font-mono text-[11px] gap-4">
+        <div className="pt-10 border-t border-neutral-900 flex flex-col md:flex-row items-center justify-between text-neutral-400 font-mono text-[11px] gap-4">
           <div className="flex items-center gap-3">
             <span>© {currentYear} Nanda Dwi Wahyu Prasetyo</span>
             <span>•</span>
@@ -139,7 +139,7 @@ export default function Footer() {
             </button>
             <a
               className="hover:text-white transition-colors"
-              href="/Resume & Portofolio - Nanda Dwi Wahyu Prrasetyo 2026.pdf"
+              href="/Resume & Portofolio - Nanda Dwi Wahyu Prasetyo 2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >

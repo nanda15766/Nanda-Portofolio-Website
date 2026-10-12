@@ -261,7 +261,7 @@ export default function ServicesAndOffers() {
 
                   <div>
                     {!offer.popular && (
-                      <span className="font-mono text-[10px] tracking-widest uppercase text-neutral-500 block mb-2">
+                      <span className="font-mono text-[10px] tracking-widest uppercase text-neutral-400 block mb-2">
                         {offer.tag}
                       </span>
                     )}
@@ -305,7 +305,7 @@ export default function ServicesAndOffers() {
                     {/* Metadata Badges */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 py-3 border-y border-neutral-800/80 text-xs font-mono text-neutral-400 mb-6">
                       <div className="flex items-center gap-2">
-                        <Clock className="w-3.5 h-3.5 text-neutral-500 shrink-0" />
+                        <Clock className="w-3.5 h-3.5 text-neutral-400 shrink-0" />
                         <span>{offer.timeline}</span>
                       </div>
                       <div className="flex items-center gap-2">
@@ -425,7 +425,7 @@ export default function ServicesAndOffers() {
                       <div className="w-10 h-10 rounded-sm bg-neutral-900 border border-neutral-800 flex items-center justify-center text-[#25D366]">
                         <Icon className="w-5 h-5" />
                       </div>
-                      <span className="font-mono text-xs text-neutral-500">{srv.number}</span>
+                      <span className="font-mono text-xs text-neutral-400">{srv.number}</span>
                     </div>
 
                     <div>
@@ -460,7 +460,7 @@ export default function ServicesAndOffers() {
                   {/* Outcome Highlight */}
                   <div className="pt-6 mt-6 border-t border-neutral-850 flex items-center justify-between text-xs">
                     <div className="text-neutral-400 font-light">
-                      <span className="font-mono uppercase text-[10px] text-neutral-500 block">
+                      <span className="font-mono uppercase text-[10px] text-neutral-400 block">
                         {language === 'en' ? 'Target Business Outcome' : 'Hasil Bisnis yang Ditargetkan'}
                       </span>
                       <span className="text-white font-medium">
@@ -549,25 +549,25 @@ export default function ServicesAndOffers() {
 
               {/* Traditional Agency */}
               <div className="p-6 sm:p-8 rounded-sm bg-neutral-950/80 border border-neutral-800 space-y-4 opacity-80">
-                <div className="flex items-center gap-2 text-neutral-500 font-mono text-xs font-bold uppercase tracking-wider">
+                <div className="flex items-center gap-2 text-neutral-400 font-mono text-xs font-bold uppercase tracking-wider">
                   <span>✕</span>
                   <span>{language === 'en' ? 'Generic Agency Approach' : 'Agensi Konvensional Biasa'}</span>
                 </div>
                 <ul className="space-y-3 text-xs sm:text-sm text-neutral-400">
                   <li className="flex items-start gap-2.5">
-                    <span className="text-neutral-600">✕</span>
+                    <span className="text-neutral-400">✕</span>
                     <span>High retainer fees with high overhead to fund agency offices and account executives.</span>
                   </li>
                   <li className="flex items-start gap-2.5">
-                    <span className="text-neutral-600">✕</span>
+                    <span className="text-neutral-400">✕</span>
                     <span>Your account is handed off to junior interns or fresh graduates with zero viral experience.</span>
                   </li>
                   <li className="flex items-start gap-2.5">
-                    <span className="text-neutral-600">✕</span>
+                    <span className="text-neutral-400">✕</span>
                     <span>Slow ticket systems and multiple bureaucratic approvals that miss fast-moving trend windows.</span>
                   </li>
                   <li className="flex items-start gap-2.5">
-                    <span className="text-neutral-600">✕</span>
+                    <span className="text-neutral-400">✕</span>
                     <span>Cookie-cutter Canva graphic carousels that get drowned in today's video-first algorithms.</span>
                   </li>
                 </ul>
@@ -588,7 +588,7 @@ export default function ServicesAndOffers() {
               {language === 'en' ? 'How We Work Together' : 'Bagaimana Kita Memulai Kolaborasi'}
             </h3>
           </div>
-          <span className="font-mono text-xs text-neutral-500">
+          <span className="font-mono text-xs text-neutral-400">
             {language === 'en' ? 'From initial chat to compounding organic reach' : 'Dari obrolan awal hingga hasil organik teruji'}
           </span>
         </div>

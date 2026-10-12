@@ -179,7 +179,7 @@ export default function ReelPhoneShowcase() {
                     <div className="w-2 h-2 rounded-full bg-[#0369a1]" />
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <span className="text-[9px]">5G</span>
+                    <span className="text-[10px]">5G</span>
                     <div className="w-4 h-2.5 border border-white rounded-[2px] p-[1px]">
                       <div className="w-full h-full bg-white" />
                     </div>
@@ -209,6 +209,8 @@ export default function ReelPhoneShowcase() {
                     <div className="flex items-center gap-3">
                       <button
                         onClick={() => setLiked(!liked)}
+                        aria-label="Like"
+                        aria-pressed={liked}
                         className="transition-transform active:scale-125"
                       >
                         <Heart

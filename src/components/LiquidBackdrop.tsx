@@ -103,8 +103,20 @@ export default function LiquidBackdrop() {
         ctx.restore();
       }
 
-      animationFrameId = requestAnimationFrame(render);
+      if (!paused && !reducedMotion) animationFrameId = requestAnimationFrame(render);
     };
+
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let paused = document.hidden;
+    const handleVisibility = () => {
+      paused = document.hidden;
+      if (!paused && !reducedMotion) {
+        cancelAnimationFrame(animationFrameId);
+      document.removeEventListener('visibilitychange', handleVisibility);
+        animationFrameId = requestAnimationFrame(render);
+      }
+    };
+    document.addEventListener('visibilitychange', handleVisibility);
 
     render();
 
@@ -115,7 +127,7 @@ export default function LiquidBackdrop() {
   }, []);
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
       <canvas
         ref={canvasRef}
         className="w-full h-full opacity-90 dark:opacity-100 transition-opacity duration-700"

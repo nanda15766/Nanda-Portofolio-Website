@@ -9,7 +9,7 @@ Built with React 19, TypeScript, Tailwind CSS, Motion (Framer Motion v12), and c
 ## 📑 Documentation Links
 
 - **Full Portfolio Content & Case Studies**: [`PORTFOLIO.md`](./PORTFOLIO.md)
-- **PDF Resume & Presentation**: [`public/Resume & Portofolio - Nanda Dwi Wahyu Prrasetyo 2026.pdf`](./public/Resume%20&%20Portofolio%20-%20Nanda%20Dwi%20Wahyu%20Prrasetyo%202026.pdf)
+- **PDF Resume & Presentation**: [`public/Resume & Portofolio - Nanda Dwi Wahyu Prasetyo 2026.pdf`](./public/Resume%20&%20Portofolio%20-%20Nanda%20Dwi%20Wahyu%20Prrasetyo%202026.pdf)
 
 ---
 

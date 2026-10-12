@@ -35,7 +35,7 @@ export default function StatRibbon() {
               <span className="font-serif-italic text-3xl md:text-4xl text-white">
                 {stat.value}
               </span>
-              <span className="font-mono text-[10px] text-neutral-500 uppercase tracking-widest leading-snug">
+              <span className="font-mono text-[10px] text-neutral-400 uppercase tracking-widest leading-snug">
                 {language === 'en' ? stat.labelEn : stat.labelId}
               </span>
             </motion.div>

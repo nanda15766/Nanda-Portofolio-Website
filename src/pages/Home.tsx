@@ -10,7 +10,7 @@ import Brands from '../components/Brands';
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen bg-pitch text-neutral-300">
+    <main id="main-content" tabIndex={-1} className="relative min-h-screen bg-pitch text-neutral-300">
       {/* 01: Hero with Reconciled Numbers, Personal Framing & Direct WhatsApp CTA */}
       <Hero />
 

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, type UIEvent } from 'react';
+import { useDialogA11y } from '../utils/useDialogA11y';
 import { createPortal } from 'react-dom';
 import { motion } from 'motion/react';
 import { X, ArrowLeft, ArrowRight, CheckCircle2, MessageSquare, TrendingUp } from 'lucide-react';
@@ -81,6 +82,9 @@ export default function CaseStudyModal({
     };
   }, [study, onClose, onNext, onPrev]);
 
+  const dialogRef = useRef<HTMLDivElement | null>(null);
+  useDialogA11y(dialogRef, !!study);
+
   if (!study) return null;
 
   return createPortal(
@@ -103,6 +107,11 @@ export default function CaseStudyModal({
 
       {/* Modal Window */}
       <motion.div
+        ref={dialogRef}
+        role="dialog"
+        aria-modal="true"
+        aria-label={study.brand}
+        tabIndex={-1}
         initial={{ opacity: 0, scale: 0.98, y: 16 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.98, y: 16 }}

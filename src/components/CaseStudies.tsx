@@ -155,7 +155,7 @@ export default function CaseStudies() {
     >
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-neutral-800 gap-6">
         <div>
-          <span className="font-mono text-xs uppercase tracking-widest text-neutral-500">
+          <span className="font-mono text-xs uppercase tracking-widest text-neutral-400">
             {language === 'en' ? '03 / PROVEN IMPACT' : '03 / DAMPAK TERBUKTI'}
           </span>
           <h2 className="font-serif-italic text-4xl md:text-5xl text-white mt-2">
@@ -213,7 +213,7 @@ export default function CaseStudies() {
                     <span className="px-2.5 py-0.5 text-[10px] font-mono uppercase tracking-wider bg-neutral-800 text-neutral-300 rounded-sm">
                       {language === 'en' ? media?.categoryEn : media?.categoryId}
                     </span>
-                    <span className="font-mono text-xs text-neutral-500">
+                    <span className="font-mono text-xs text-neutral-400">
                       0{idx + 1}
                     </span>
                   </div>
@@ -229,7 +229,7 @@ export default function CaseStudies() {
 
                   <div className="space-y-2 pt-2 border-t border-neutral-800/60 text-xs">
                     <div>
-                      <span className="font-mono text-[10px] uppercase text-neutral-500 block mb-0.5">
+                      <span className="font-mono text-[10px] uppercase text-neutral-400 block mb-0.5">
                         {language === 'en' ? 'Core Challenge:' : 'Tantangan Utama:'}
                       </span>
                       <p className="text-neutral-300 line-clamp-2 leading-relaxed">
@@ -237,7 +237,7 @@ export default function CaseStudies() {
                       </p>
                     </div>
                     <div>
-                      <span className="font-mono text-[10px] uppercase text-neutral-500 block mb-0.5">
+                      <span className="font-mono text-[10px] uppercase text-neutral-400 block mb-0.5">
                         {language === 'en' ? 'Key Quantified Results:' : 'Hasil Terukur Utama:'}
                       </span>
                       <ul className="text-neutral-300 space-y-1">
@@ -259,7 +259,7 @@ export default function CaseStudies() {
                         <span className="font-serif-italic text-sm text-white font-bold block">
                           {kpi.value}
                         </span>
-                        <span className="font-mono text-[9px] text-neutral-500 uppercase">
+                        <span className="font-mono text-[10px] text-neutral-400 uppercase">
                           {kpi.label}
                         </span>
                       </div>
@@ -301,7 +301,7 @@ export default function CaseStudies() {
                     <span className="px-2.5 py-1 text-[10px] font-mono uppercase tracking-wider bg-neutral-800 text-neutral-300 rounded-sm">
                       {language === 'en' ? item.categoryEn : item.categoryId}
                     </span>
-                    <span className="text-neutral-500 font-mono text-xs">
+                    <span className="text-neutral-400 font-mono text-xs">
                       • {language === 'en' ? item.clientEn : item.clientId}
                     </span>
                   </div>
@@ -321,7 +321,7 @@ export default function CaseStudies() {
                         <span className="font-serif-italic text-2xl md:text-3xl text-white">
                           {metric.val}
                         </span>
-                        <p className="font-mono text-[10px] text-neutral-500 uppercase tracking-wider mt-0.5">
+                        <p className="font-mono text-[10px] text-neutral-400 uppercase tracking-wider mt-0.5">
                           {metric.lbl}
                         </p>
                       </div>

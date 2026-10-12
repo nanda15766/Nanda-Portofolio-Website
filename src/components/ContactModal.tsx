@@ -1,4 +1,5 @@
-import { useState, useEffect, type FormEvent } from 'react';
+import { useState, useEffect, useRef, type FormEvent } from 'react';
+import { useDialogA11y } from '../utils/useDialogA11y';
 import { motion, AnimatePresence } from 'motion/react';
 import { Send, CheckCircle2, X, Mail, MessageSquare, Copy, Check, ExternalLink, RotateCcw } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
@@ -31,16 +32,24 @@ export default function ContactModal() {
   const [submittedData, setSubmittedData] = useState<SubmittedMessage | null>(null);
   const [copied, setCopied] = useState(false);
 
+  const dialogRef = useRef<HTMLDivElement | null>(null);
+  useDialogA11y(dialogRef, isContactOpen);
+
   useEffect(() => {
-    if (isContactOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
+    if (!isContactOpen) {
       document.body.style.overflow = 'unset';
+      return;
     }
+    document.body.style.overflow = 'hidden';
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') closeContact();
+    };
+    document.addEventListener('keydown', onKeyDown);
     return () => {
       document.body.style.overflow = 'unset';
+      document.removeEventListener('keydown', onKeyDown);
     };
-  }, [isContactOpen]);
+  }, [isContactOpen, closeContact]);
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -120,6 +129,11 @@ export default function ContactModal() {
 
           {/* Slide-over Architectural Panel */}
           <motion.div
+            ref={dialogRef}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="contact-dialog-title"
+            tabIndex={-1}
             initial={{ x: '100%' }}
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
@@ -132,7 +146,7 @@ export default function ContactModal() {
                 <span className="text-[10px] uppercase font-mono tracking-[0.25em] text-brand-light block mb-1">
                   05 / INQUIRY & CONTACT
                 </span>
-                <h2 className="text-xl font-display font-light text-white tracking-tight">
+                <h2 id="contact-dialog-title" className="text-xl font-display font-light text-white tracking-tight">
                   {t.thankYou}
                 </h2>
               </div>
@@ -199,7 +213,7 @@ export default function ContactModal() {
                         <Mail className="w-4 h-4 text-black" />
                         <span>{language === 'en' ? 'Open in Gmail (Web)' : 'Buka di Gmail (Web)'}</span>
                       </span>
-                      <ExternalLink className="w-3.5 h-3.5 text-neutral-600 group-hover:translate-x-0.5 transition-transform" />
+                      <ExternalLink className="w-3.5 h-3.5 text-neutral-400 group-hover:translate-x-0.5 transition-transform" />
                     </a>
 
                     {/* Option 2: Default Mail Client (mailto) */}

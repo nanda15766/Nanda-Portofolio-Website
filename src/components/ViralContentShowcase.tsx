@@ -82,7 +82,7 @@ export default function ViralContentShowcase() {
                 </div>
 
                 {/* Platform Badge */}
-                <div className="absolute top-3 right-3 px-2 py-0.5 rounded-xs bg-neutral-900/90 border border-neutral-700 text-neutral-300 font-mono text-[9px] uppercase tracking-wider">
+                <div className="absolute top-3 right-3 px-2 py-0.5 rounded-xs bg-neutral-900/90 border border-neutral-700 text-neutral-300 font-mono text-[10px] uppercase tracking-wider">
                   {item.platform}
                 </div>
 
@@ -109,14 +109,14 @@ export default function ViralContentShowcase() {
                     <Share2 className="w-3.5 h-3.5 text-sky-400" />
                     <span>{item.shares}</span>
                   </div>
-                  <div className="text-[10px] text-neutral-500 uppercase">
+                  <div className="text-[10px] text-neutral-400 uppercase">
                     {item.ratio}
                   </div>
                 </div>
 
                 {/* Hook preview */}
                 <div className="text-xs">
-                  <span className="font-mono text-[10px] uppercase text-neutral-500 block mb-1">
+                  <span className="font-mono text-[10px] uppercase text-neutral-400 block mb-1">
                     {language === 'en' ? 'Hook Formula:' : 'Formula Hook:'}
                   </span>
                   <p className="text-neutral-300 italic line-clamp-2 leading-relaxed">
