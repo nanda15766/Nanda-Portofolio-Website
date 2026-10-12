@@ -8,7 +8,7 @@ export default function Partnerships() {
   const { language } = useLanguage();
 
   return (
-    <main className="relative min-h-screen bg-[#07090c] text-white selection:bg-brand-bold selection:text-white pt-24">
+    <main id="main-content" tabIndex={-1} className="relative min-h-screen bg-[#07090c] text-white selection:bg-brand-bold selection:text-white pt-24">
       {/* Background Liquid Surface */}
       <LiquidBackdrop />
 

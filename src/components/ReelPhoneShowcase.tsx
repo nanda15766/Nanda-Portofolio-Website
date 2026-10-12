@@ -209,6 +209,8 @@ export default function ReelPhoneShowcase() {
                     <div className="flex items-center gap-3">
                       <button
                         onClick={() => setLiked(!liked)}
+                        aria-label="Like"
+                        aria-pressed={liked}
                         className="transition-transform active:scale-125"
                       >
                         <Heart

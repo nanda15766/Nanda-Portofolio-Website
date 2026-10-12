@@ -6,7 +6,7 @@ import LiquidBackdrop from '../components/LiquidBackdrop';
 
 export default function About() {
   return (
-    <main className="relative min-h-screen bg-[#07090c] text-white selection:bg-brand-bold selection:text-white">
+    <main id="main-content" tabIndex={-1} className="relative min-h-screen bg-[#07090c] text-white selection:bg-brand-bold selection:text-white">
       {/* Background Liquid Surface */}
       <LiquidBackdrop />
 

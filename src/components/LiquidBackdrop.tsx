@@ -127,7 +127,7 @@ export default function LiquidBackdrop() {
   }, []);
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
       <canvas
         ref={canvasRef}
         className="w-full h-full opacity-90 dark:opacity-100 transition-opacity duration-700"
